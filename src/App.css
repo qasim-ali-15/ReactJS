@@ -11,5 +11,298 @@ body{
 .banner{
   width: 100%;
   height: 100vh;
-  background: url("/img/bg.jpg");
-};
+  background: url("/public/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__content{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner__text{
+  width: 500px;
+}
+
+.banner__text h3{
+  font-size: 20px;
+}
+
+.banner__text h1{
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.banner__text p{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  
+}
+
+.navbar__text{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logo{
+  width:40%;
+}
+
+.logo img{
+  width: 200px;
+}
+
+.navbar__ul{
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar__ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.banner__btn{
+  margin-top: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 20px 40px;
+}
+
+.btn-smart {
+  background: black;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.btn-smart2 {
+  color: black;
+  background: rgb(255,255,255);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.btn-smart3{
+  color: white;
+  background-color: brown;
+
+}
+
+.About{
+  padding: 80px 0;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-6 h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.col-6 h1{
+  font-size: 45px;
+  font-weight: 800;
+  margin: 20px 0px;
+}
+
+.col-6 p{
+  line-height: 1.5;
+}
+
+.about__btn{
+  margin-top: 35px;
+}
+
+.about__image{
+  width: 100%;
+  overflow: hidden;
+}
+
+.about__image img{
+  width: 100%;
+}
+
+.courses{
+  width: 100%;
+  background: url("/public/img/course.jpg");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.courses__text {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  justify-content: center;
+}
+
+.courses__heading h1{
+  font-size: 70px;
+  color: white;
+  background-color: brown;
+}
+
+.courses__heading h2{
+  font-size: 40px;
+}
+
+.courses__row{
+  margin: auto 50px;
+  padding: 40px;
+  display: block;
+  width: 100%;
+  display: flex;
+}
+
+.courses__img{
+  padding-inline-start: 50px;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.courses__img img{
+  width: 100%;
+}
+
+.col-3{
+  width: 30%;
+}
+
+.col-3 h2{
+  padding: 20px 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+.col-3 h4{
+  padding: 20px 20px;
+  color: gray;
+  font-style: italic;
+  background-color: white;
+}
+
+.courses__btn{
+  margin: 35px;
+}
+
+@media (max-width: 700px){
+  .navbar__text{
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar__ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .navbar__text{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .container{
+    width: 100%;
+    padding: 0 30px;
+  }
+  .banner__text{
+    width: auto;
+  }
+  
+  .banner__text h3{
+    font-size: 25px;
+    margin-top: 50%;
+  }
+  
+  .banner__text h1{
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 800;
+    margin-top: 20px;
+  }
+  
+  .banner__text p{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .col-3,
+  .col-6{
+    width: 100%;
+  }
+
+  .courses__btn{
+    margin: 0px 0px;
+    width: 0%;
+    padding: 0px 0px;
+    display: flex;
+  }
+  
+  .courses__row{
+    margin: 0px 0px;
+    padding: 5px 5px;
+    
+    width: 33.33%;
+    display: flex;
+  }
+} 
